@@ -1,0 +1,119 @@
+@media (max-width:1200px) {
+    .page-width {
+        padding: 0 50px;
+    }
+
+    .grid-col-3-laptop .grid-item {
+        width: calc(33.3% - 10px);
+        max-width: calc(33.3% - 10px);
+    }
+
+    .grid-col-1-laptop .grid-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .laptop-align-C {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-btn-wraper {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer-contact-wraper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .terms-service-wraper {
+        justify-content: center;
+    }
+
+    .payment-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .leptop-hide {
+        display: none;
+    }
+
+    .desktop-hide {
+        display: block;
+    }
+
+    .header-logo-wraper {
+        width: 15%;
+    }
+
+    .banner-text-wraper {
+        max-width: 300px;
+        padding: 0px;
+        gap: 15px;
+    }
+
+    .h3 {
+        font-size: var(--secendary-heading-size);
+    }
+
+    .h5 {
+        font-size: 10px;
+        letter-spacing: 0.1px;
+    }
+
+    .primary-btn {
+        padding: 6px 10px;
+        border-radius: 3px;
+        width: 40%;
+        font-size: 10px;
+    }
+
+    .icon-with-text-wraper {
+        padding: 0;
+        text-align: center;
+    }
+
+    .icon {
+        max-width: 20px;
+        display: flex;
+        max-height: 20px;
+    }
+
+    .icon-wraper {
+        display: flex;
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+}
+
+@media (max-width:750px) {
+    .banner-background {
+        aspect-ratio: 3/2;
+    }
+
+    .icon {
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    span.hembergan-wraper {
+        display: flex;
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .grid-col-2-mobile .grid-item {
+        width: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
