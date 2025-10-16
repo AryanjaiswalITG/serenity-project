@@ -8,6 +8,11 @@
         max-width: calc(33.3% - 10px);
     }
 
+    .grid-col-2-laptop .grid-item {
+        width: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
     .grid-col-1-laptop .grid-item {
         width: 100%;
         max-width: 100%;
@@ -73,7 +78,7 @@
     .primary-btn {
         padding: 6px 10px;
         border-radius: 3px;
-        width: 40%;
+        width: 100%;
         font-size: 10px;
     }
 
@@ -94,6 +99,10 @@
         max-height: 40px;
     }
 
+    .relative {
+        width: 40%;
+    }
+
 }
 
 @media (max-width:750px) {
@@ -106,6 +115,14 @@
         max-height: 15px;
     }
 
+    .page-width {
+        padding: 0 20px;
+    }
+
+    .contact-us {
+        padding: 40px 0;
+    }
+
     span.hembergan-wraper {
         display: flex;
         max-width: 20px;
@@ -115,5 +132,13 @@
     .grid-col-2-mobile .grid-item {
         width: calc(50% - 10px);
         max-width: calc(50% - 10px);
+    }
+
+    .relative {
+        width: 60%;
+    }
+
+    .banner-text-wraper2 {
+        padding: 10px;
     }
 }

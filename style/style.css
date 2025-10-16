@@ -86,12 +86,19 @@ a {
     letter-spacing: 0;
 }
 
-.color-schima-1 {
+.color-scheme-1 {
     --color-background: #26A3DB;
     --color-forground: #fff;
-    --primary-btn-bg: #FFFFFF;
-    --btn-primary-color: #000309;
+}
 
+.color-scheme-2 {
+    --color-background: #F9F9F9;
+    --color-forground: #000309;
+}
+
+.color-scheme-3 {
+    --color-background: #E9F6FB;
+    --color-forground: #000309;
 }
 
 .gredient {
@@ -150,6 +157,8 @@ a {
 .banner-wraper {
     position: relative;
     top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-links {
@@ -193,6 +202,23 @@ a {
     align-items: center;
     line-height: 100%;
     letter-spacing: 0;
+    width: 100%;
+}
+
+.underline-btn {
+    padding-bottom: 13px;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: var(--btn-font-size);
+    font-family: var(--font-family-secendary);
+    font-weight: var(--font-primary-weight);
+    font-style: Medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    width: fit-content;
+    margin: auto;
 }
 
 .align {
@@ -240,6 +266,12 @@ a {
     z-index: -1;
 }
 
+.relative {
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+
 .flex {
     display: flex;
 }
@@ -253,6 +285,7 @@ a {
     max-width: 1600px;
     margin: auto;
     font-size: 14px;
+    z-index: 10;
     font-family: var(--font-family-secendary);
 }
 
@@ -273,11 +306,23 @@ a {
     max-width: 400px;
 }
 
+.banner-text-wraper2 {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    transform: translateY(-50%);
+    padding: 120px;
+    max-width: 550px;
+}
+
 .banner-btn-wraper {
     max-width: 148px;
     max-height: 48px;
     width: 100%;
 }
+
 
 .font-white {
     color: #fff;
@@ -354,4 +399,122 @@ a {
     font-size: 14px;
     display: flex;
     align-items: center;
+}
+
+.mySwiper span.swiper-pagination-bullet {
+    color: #fff;
+    background: white;
+    width: 15px;
+    height: 15px;
+}
+
+.category-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: black;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: black;
+}
+
+.category-card-text {
+    font-size: 20px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-primary-weight);
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.category-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0;
+}
+
+.featured-content {
+    font-size: 14px;
+    font-family: var(--font-family-secendary);
+    font-weight: var(--font-secendary-weight);
+    letter-spacing: 0;
+    line-height: 100%;
+}
+
+.color-gray {
+    color: #8A9099;
+}
+
+.icon-with-text2-wraper {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us {
+    padding: 80px 0;
+}
+
+.contact-us-pera {
+    text-align: -webkit-center;
+    max-width: 55%;
+    margin: auto;
+    font-family: var(--font-family-secendary);
+    font-weight: var(--font-secendary-weight);
+    font-size: 14px;
+    line-height: 100%;
+    font-style: "Regular";
+}
+
+.contact-us-heading {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-primary-weight);
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.blue-text {
+    font-family: var(--font-family-secendary);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: var(--background-secendary);
+}
+
+.rich-text {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-primary);
+    font-weight: 700;
+}
+
+.rich-text-content {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-primary-weight);
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    max-width: 900px;
 }
