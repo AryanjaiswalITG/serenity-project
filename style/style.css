@@ -86,6 +86,13 @@ a {
     letter-spacing: 0;
 }
 
+.blog-content-heading {
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+
 .color-scheme-1 {
     --color-background: #26A3DB;
     --color-forground: #fff;
@@ -188,7 +195,7 @@ a {
 }
 
 .primary-btn {
-    padding: 13px 36px;
+    padding: 20px 25px;
     border: none;
     border-radius: 5px;
     background-color: var(--primary-btn-bg);
@@ -218,7 +225,6 @@ a {
     align-items: center;
     line-height: 100%;
     width: fit-content;
-    margin: auto;
 }
 
 .align {
@@ -289,6 +295,10 @@ a {
     font-family: var(--font-family-secendary);
 }
 
+.review-box-wraper {
+    padding: 80px 0;
+}
+
 .banner-text-outer {
     display: flex;
     gap: 10px;
@@ -307,12 +317,9 @@ a {
 }
 
 .banner-text-wraper2 {
-    position: absolute;
-    top: 50%;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    transform: translateY(-50%);
     padding: 120px;
     max-width: 550px;
 }
@@ -417,16 +424,10 @@ a {
     text-align: center;
 }
 
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-    content: 'prev';
-    color: black;
-}
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-    content: 'next';
-    color: black;
+.swiper-button-next.swiper-button::after,
+.swiper-button-prev.swiper-button::after {
+    display: none;
 }
 
 .category-card-text {
@@ -463,6 +464,7 @@ a {
     align-items: center;
 }
 
+.scrolling-with-image,
 .contact-us {
     padding: 80px 0;
 }
@@ -490,10 +492,8 @@ a {
 .blue-text {
     font-family: var(--font-family-secendary);
     font-weight: 700;
-    font-style: Bold;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-transform: uppercase;
     color: var(--background-secendary);
 }
@@ -518,3 +518,155 @@ a {
     text-align: center;
     max-width: 900px;
 }
+
+.banner-content-ab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.review-section-outer,
+.image-with-text-2 {
+    padding: 80px 0;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+.image-with-text {
+    padding: 80px 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.media {
+    display: inline-block;
+    width: 100%;
+}
+
+.image-with-text-media-first-wraper {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 30%;
+    z-index: 1;
+}
+
+.image-with-text-media-second-wraper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    z-index: -1;
+}
+
+.image-with-text-content-wraper {
+    padding: 81px 0;
+}
+
+.scrolling-with-image-text {
+    position: sticky;
+    top: 10%;
+    left: 0;
+    right: 0;
+    padding: 60px;
+    transform: translateY(20%, 20%);
+}
+
+.scrolling-images-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.for-next::after,
+.for-prev::after {
+    display: none;
+}
+
+.for-next {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 28px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.for-prev {
+    rotate: 180deg;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-swiper {
+    width: 100%;
+}
+
+.insta-feed-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0;
+}
+
+.insta-feed-width {
+    max-width: 1600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.blog-wraper {
+    padding: 80px 0;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.blog-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+/* .blog {
+    position: relative;
+} */
+
+/* .blog::after {
+    width: 1px;
+    height: 100%;
+    background-color: #8A9099;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+} */

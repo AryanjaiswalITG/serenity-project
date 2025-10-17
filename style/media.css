@@ -62,8 +62,33 @@
 
     .banner-text-wraper {
         max-width: 300px;
-        padding: 0px;
+        padding: 20px;
         gap: 15px;
+    }
+
+    .category-btn-wraper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-with-text {
+        justify-content: space-between;
+    }
+
+    .banner-text-wraper2 {
+        max-width: 400px;
+    }
+
+    .insta-feed-media-wraper {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .payment-card {
+        display: flex;
+        justify-content: center;
     }
 
     .h3 {
@@ -103,6 +128,18 @@
         width: 40%;
     }
 
+    .image-with-text-media-second-wraper,
+    .image-with-text-media-first-wraper {
+        position: static;
+        width: 100%;
+    }
+
+    .scrolling-with-image,
+    .image-with-text-media-wraper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
 }
 
 @media (max-width:750px) {
@@ -129,6 +166,11 @@
         max-height: 20px;
     }
 
+    .grid-col-1-mobile .grid-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .grid-col-2-mobile .grid-item {
         width: calc(50% - 10px);
         max-width: calc(50% - 10px);
@@ -140,5 +182,27 @@
 
     .banner-text-wraper2 {
         padding: 10px;
+    }
+
+    .scrolling-with-image-text {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: static;
+    }
+
+    .non-scrolling-wraper {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .image-with-text-content-point-wraper {
+        flex-direction: row;
     }
 }
