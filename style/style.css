@@ -576,6 +576,9 @@ a {
     z-index: -1;
 }
 
+.margin-auto{
+    margin: auto;
+}
 .image-with-text-content-wraper {
     padding: 81px 0;
 }
