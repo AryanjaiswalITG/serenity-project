@@ -62,9 +62,7 @@ age_submit.addEventListener("click", (event) => {
         document.querySelector(".age-varification").style.display = "none";
         document.querySelector(".welcome").style.display = "block"
         localStorage.setItem('userage', 'true');
-        setInterval(() => {
-            document.querySelector(".age-varification-wraper").style.display = "none";
-        }, 2000);
+        welcome_popup()
     }
     else {
         document.querySelector(".age-varification").style.display = "none";
