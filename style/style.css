@@ -375,6 +375,8 @@ a {
     font-style: normal;
     letter-spacing: 0;
     width: 75%;
+    color: #F9F9F9;
+    outline: none;
 }
 
 .footer-btn-wraper {
@@ -608,7 +610,7 @@ a {
     position: relative;
     height: 30px;
     width: 30px;
-    top: 28px;
+    top: 0;
     bottom: 0;
     left: 40px;
     right: 0;
@@ -623,7 +625,7 @@ a {
     position: relative;
     height: 30px;
     width: 30px;
-    top: 20px;
+    top:-7px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -755,4 +757,9 @@ a {
 .quick-btn-wraper {
     position: relative;
     width: 100%;
+}
+
+.arro-wraper {
+    position: relative;
+    top: 0;
 }

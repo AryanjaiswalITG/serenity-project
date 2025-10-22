@@ -152,6 +152,17 @@
     .footer-form-email {
         width: 100%;
     }
+
+    .image-with-text-content {
+        position: sticky;
+        top: 25%;
+        bottom: 40%;
+    }
+
+    .image-with-text-content-wraper {
+        position: relative;
+        top: 0;
+    }
 }
 
 @media (max-width:750px) {
@@ -228,6 +239,7 @@
     }
 
     .insta-feed-media-wraper.gap-20 {
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
     }
 }
