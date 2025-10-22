@@ -717,6 +717,7 @@ a {
     border: none;
     border-radius: 5px;
     outline: none;
+    font-size: 20px;
 }
 
 .error-cover,
@@ -736,7 +737,7 @@ a {
 } */
 .outline-btn {
     z-index: -1;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 20px;
     border: 1px solid rgba(128, 128, 128, 0.705);
     border-radius: 5px;
@@ -756,10 +757,12 @@ a {
     font-family: var(--font-family-secendary);
     font-weight: 300;
 }
-.category-card-media-wraper:hover .outline-btn{
+
+.category-card-media-wraper:hover .outline-btn {
     z-index: 0;
 }
-.quick-btn-wraper{
+
+.quick-btn-wraper {
     position: relative;
     width: 100%;
 }
