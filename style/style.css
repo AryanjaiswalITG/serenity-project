@@ -195,7 +195,7 @@ a {
 }
 
 .primary-btn {
-    padding: 20px 25px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     background-color: var(--primary-btn-bg);
@@ -224,7 +224,7 @@ a {
     justify-content: center;
     align-items: center;
     line-height: 100%;
-    width:fit-content ;
+    width: fit-content;
 }
 
 .align {
@@ -576,9 +576,10 @@ a {
     z-index: -1;
 }
 
-.margin-auto{
+.margin-auto {
     margin: auto;
 }
+
 .image-with-text-content-wraper {
     padding: 81px 0;
 }
@@ -665,16 +666,100 @@ a {
     color: #000000;
 }
 
-/* .blog {
-    position: relative;
-} */
+.primary-btn:hover {
+    background-color: #87a5b3;
+    color: #fff;
+}
 
-/* .blog::after {
-    width: 1px;
+.underline-btn:hover {
+    color: rgb(189, 84, 23);
+    border-bottom-color: rgb(189, 84, 23);
+}
+
+.age-varification-wraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     height: 100%;
-    background-color: #8A9099;
-    position: absolute;
+    background: rgba(32, 33, 34, 0.95);
+    position: fixed;
+    z-index: 100;
     top: 0;
-    left: 50%;
-    z-index: 2;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+}
+
+.error-popup-wraper,
+.welcome-popup-wraper,
+.age-varification-header {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background: var(--background-primary);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0px 0px 8px 1px white;
+}
+
+.age-varification-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.age-box {
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.error-cover,
+.welcome {
+    display: none;
+}
+
+/* .outline-btn {
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
 } */
+.outline-btn {
+    z-index: -1;
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.705);
+    border-radius: 5px;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    display: flex;
+    transform: translateY(-90%);
+    transition: all 0.2s ease-in-out;
+    font-family: var(--font-family-secendary);
+    font-weight: 300;
+}
+.category-card-media-wraper:hover .outline-btn{
+    z-index: 0;
+}
+.quick-btn-wraper{
+    position: relative;
+    width: 100%;
+}

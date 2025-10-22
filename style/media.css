@@ -100,12 +100,13 @@
         letter-spacing: 0.1px;
     }
 
+    /* 
     .primary-btn {
         padding: 6px 10px;
         border-radius: 3px;
         width: 100%;
         font-size: 10px;
-    }
+    } */
 
     .icon-with-text-wraper {
         padding: 0;
@@ -140,6 +141,17 @@
         gap: 40px;
     }
 
+    .image-with-text-2 {
+        flex-direction: column;
+    }
+
+    .width-50 {
+        width: 100%;
+    }
+
+    .footer-form-email {
+        width: 100%;
+    }
 }
 
 @media (max-width:750px) {
@@ -183,7 +195,7 @@
     .banner-text-wraper2 {
         padding: 10px;
     }
-    
+
     .scrolling-with-image-text {
         margin: auto;
         width: 100%;
@@ -204,5 +216,18 @@
 
     .image-with-text-content-point-wraper {
         flex-direction: row;
+    }
+
+    .image-with-text {
+        flex-direction: column;
+    }
+
+    .blog-wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .insta-feed-media-wraper.gap-20 {
+        grid-template-columns: auto;
     }
 }
