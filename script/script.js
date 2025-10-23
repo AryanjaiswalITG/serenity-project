@@ -55,8 +55,8 @@ var review_swiper = new Swiper(".review-swiper", {
 stored_age()
 // age verification 
 let user_age = document.getElementById("user-age");
-let age_submit = document.getElementById("age-submit");
-age_submit.addEventListener("click", (event) => {
+let age_submit = document.querySelector(".age-varification-form");
+age_submit.addEventListener("submit", (event) => {
     event.preventDefault();
     if (user_age.value >= 18 && user_age.value > 0 && user_age.value < 100) {
         document.querySelector(".age-varification").style.display = "none";
