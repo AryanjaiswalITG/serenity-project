@@ -179,12 +179,10 @@ a {
     align-items: center;
 }
 
-.icon-with-text-wraper {
-    padding: 0 55px;
-}
-
-.header-logo-wraper {
-    width: 38%;
+.siwper-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-inner {
@@ -625,7 +623,7 @@ a {
     position: relative;
     height: 30px;
     width: 30px;
-    top:-7px;
+    top: -7px;
     bottom: 0;
     left: 0;
     right: 0;

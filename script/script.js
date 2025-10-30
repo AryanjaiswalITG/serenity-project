@@ -59,14 +59,10 @@ let age_submit = document.querySelector(".age-varification-form");
 age_submit.addEventListener("submit", (event) => {
     event.preventDefault();
     if (user_age.value >= 18 && user_age.value > 0 && user_age.value < 100) {
-        document.querySelector(".age-varification").style.display = "none";
-        document.querySelector(".welcome").style.display = "block"
-        localStorage.setItem('userage', 'true');
         welcome_popup()
     }
     else {
-        document.querySelector(".age-varification").style.display = "none";
-        document.querySelector(".error-cover").style.display = "block";
+        error_popup()
     }
 });
 
@@ -78,7 +74,14 @@ function stored_age() {
         document.querySelector(".error-cover").style.display = "block";
     }
 }
+function error_popup() {
+    document.querySelector(".age-varification").style.display = "none";
+    document.querySelector(".error-cover").style.display = "block";
+}
 function welcome_popup() {
+    document.querySelector(".age-varification").style.display = "none";
+    localStorage.setItem('userage', 'true');
+    document.querySelector(".welcome").style.display = "block"
     setInterval(() => {
         document.querySelector(".age-varification-wraper").style.display = "none";
     }, 2000);
